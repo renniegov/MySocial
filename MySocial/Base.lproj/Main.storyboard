@@ -17,11 +17,93 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FhT-U5-Guc">
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="devslopes-logo" translatesAutoresizingMaskIntoConstraints="NO" id="SgD-RZ-qTq"/>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.73725490196078436" blue="0.83137254901960778" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="167" id="8cG-ss-NiC"/>
+                                    <constraint firstItem="SgD-RZ-qTq" firstAttribute="centerY" secondItem="FhT-U5-Guc" secondAttribute="centerY" id="ufF-c0-PZb"/>
+                                    <constraint firstItem="SgD-RZ-qTq" firstAttribute="centerX" secondItem="FhT-U5-Guc" secondAttribute="centerX" id="yxq-hs-ON4"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nEu-lJ-UBZ">
+                                <frame key="frameInset" minY="578" width="375" height="89"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="If you have not signed in before, an account will be created for you" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ERA-tC-Wv3">
+                                        <frame key="frameInset" minX="8" width="359" height="62"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
+                                        <color key="textColor" red="0.9453125" green="0.9453125" blue="0.9453125" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.51372549019607838" blue="0.5607843137254902" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Select a sign in method" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Z5-sl-Skv">
+                                <frame key="frameInset" minX="25" minY="175" width="304" height="36"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.87" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xiO-KH-JSA">
+                                <frame key="frameInset" minX="85" minY="211" width="185" height="144"/>
+                                <color key="backgroundColor" red="0.22352941179999999" green="0.30980392159999998" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="3NM-YC-Ck1"/>
+                                    <constraint firstAttribute="width" constant="150" id="WZL-5V-RSq"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="caP-h3-tVU"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="f">
+                                    <color key="titleColor" red="0.22352941176470589" green="0.30980392156862746" blue="0.62352941176470589" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.22352941176470589" green="0.30980392156862746" blue="0.62352941176470589" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="email address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wwl-ot-BDY">
+                                <frame key="frameInset" minX="13" minY="384" width="346" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dZ8-7h-cJ2">
+                                <frame key="frameInset" minX="13" minY="445" width="346" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ba-eB-p0O">
+                                <frame key="frameInset" minX="13" minY="505" width="346" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.8666666666666667" green="0.17254901960784313" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Sign In">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99519230769230771" green="0.99038461538461542" blue="1" alpha="0.87" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.68467548076923079" green="0.68467548076923079" blue="0.68467548076923079" alpha="0.87" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="nEu-lJ-UBZ" secondAttribute="trailing" id="BH0-2N-KeV"/>
+                            <constraint firstAttribute="trailing" secondItem="FhT-U5-Guc" secondAttribute="trailing" id="M9i-LN-RmJ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="nEu-lJ-UBZ" secondAttribute="bottom" id="nYk-Cf-T0n"/>
+                            <constraint firstItem="FhT-U5-Guc" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="nym-Qs-ga9"/>
+                            <constraint firstItem="xiO-KH-JSA" firstAttribute="top" secondItem="2Z5-sl-Skv" secondAttribute="bottom" constant="20" id="qYo-40-mJf"/>
+                            <constraint firstItem="FhT-U5-Guc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="rRD-fQ-pyz"/>
+                            <constraint firstItem="nEu-lJ-UBZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="sHG-5J-Hfz"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="devslopes-logo" width="150" height="94"/>
+        <image name="f" width="352" height="328"/>
+    </resources>
 </document>
